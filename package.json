@@ -1,0 +1,30 @@
+{
+  "name": "notgeefu",
+  "version": "1.0.0",
+  "description": "not geefu",
+  "main": "server.js",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.13.4",
+    "less-middleware": "^2.1.0",
+    "socket.io": "^1.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wookoouk/notgeefu.git"
+  },
+  "keywords": [
+    "not",
+    "geefu"
+  ],
+  "author": "Martin Page",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wookoouk/notgeefu/issues"
+  },
+  "homepage": "https://github.com/wookoouk/notgeefu#readme"
+}
