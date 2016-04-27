@@ -1,0 +1,218 @@
+<?xml version="1.0" standalone="yes"?>
+
+<DASSTYLE>
+    <STYLESHEET>
+        <CATEGORY id="default">
+            <TYPE id="default">
+                <GLYPH>
+                    <BOX>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>#ED5565</FGCOLOR>
+                        <BGCOLOR>#ED5565</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>no</LABEL>
+                    </BOX>
+                </GLYPH>
+            </TYPE>
+            <TYPE id="cpgoe">
+                <GLYPH>
+                    <LINEPLOT>
+                        <HEIGHT>50</HEIGHT>
+                        <MIN>0.0</MIN>
+                        <MAX>1.2</MAX>
+                        <COLOR1>#ED5565</COLOR1>
+                        <BUMP>yes</BUMP>
+                        <LINEWIDTH>2</LINEWIDTH>
+                    </LINEPLOT>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='CDS'>
+                <GLYPH>
+                    <BOX>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>#ED5565</FGCOLOR>
+                        <BGCOLOR>#ED5565</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>no</LABEL>
+                    </BOX>
+                </GLYPH>
+            </TYPE>
+            <TYPE id="exon">
+                <GLYPH>
+                    <BOX>
+                        <FGCOLOR>#FFCE54</FGCOLOR>
+                        <BGCOLOR>#FFCE54</BGCOLOR>
+                        <LABEL>no</LABEL>
+                        <BUMP>no</BUMP>
+                    </BOX>
+                </GLYPH>
+            </TYPE>
+            <TYPE id="transcript">
+                <GLYPH>
+                    <LINE>
+                        <FGCOLOR>#3D4351</FGCOLOR>
+                        <STYLE>hat</STYLE>
+                        <BUMP>yes</BUMP>
+                    </LINE>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='five_prime_UTR'>
+                <GLYPH>
+                    <BOX>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>#FC6E51</FGCOLOR>
+                        <BGCOLOR>#FC6E51</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>no</LABEL>
+                    </BOX>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='three_prime_UTR'>
+                <GLYPH>
+                    <BOX>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>#A0D468</FGCOLOR>
+                        <BGCOLOR>#A0D468</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>no</LABEL>
+                    </BOX>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='gene'>
+                <GLYPH>
+                    <BOX>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>#FFCE54</FGCOLOR>
+                        <BGCOLOR>#FFCE54</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>yes</LABEL>
+                    </BOX>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='mRNA'>
+                <GLYPH>
+                    <BOX>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>transparent</FGCOLOR>
+                        <BGCOLOR>transparent</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>yes</LABEL>
+                    </BOX>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='intron'>
+                <GLYPH>
+                    <LINE>
+                        <FGCOLOR>#3D4351</FGCOLOR>
+                        <STYLE>hat</STYLE>
+                        <BUMP>no</BUMP>
+                        <HEIGHT>10</HEIGHT>
+                        <LABEL>no</LABEL>
+                    </LINE>
+                    <BOX>
+                        <FGCOLOR>#3D4351</FGCOLOR>
+                        <BGCOLOR>#3D4351</BGCOLOR>
+                        <LABEL>no</LABEL>
+                        <BUMP>no</BUMP>
+                    </BOX>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='tss'>
+                <GLYPH>
+                    <BOX>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>#3D4351</FGCOLOR>
+                        <BGCOLOR>#3D4351</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>no</LABEL>
+                    </BOX>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='tts'>
+                <GLYPH>
+                    <HEIGHT>10</HEIGHT>
+                    <FGCOLOR>#3D4351</FGCOLOR>
+                    <BGCOLOR>#3D4351</BGCOLOR>
+                    <BUMP>yes</BUMP>
+                    <LABEL>no</LABEL>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='insertion'>
+                <GLYPH>
+                    <STAR>
+                        <SIZE>15</SIZE>
+                        <POINTS>4</POINTS>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>#9DD563</FGCOLOR>
+                        <BGCOLOR>transparent</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>no</LABEL>
+                    </STAR>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='deletion'>
+                <GLYPH>
+                    <STAR>
+                        <SIZE>15</SIZE>
+                        <POINTS>3</POINTS>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>#F15563</FGCOLOR>
+                        <BGCOLOR>transparent</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>no</LABEL>
+                    </STAR>
+                </GLYPH>
+            </TYPE>
+            <TYPE id='substitution'>
+                <GLYPH>
+                    <PLIMSOLL>
+                        <SIZE>15</SIZE>
+                        <HEIGHT>10</HEIGHT>
+                        <FGCOLOR>#5A9AEE</FGCOLOR>
+                        <BGCOLOR>transparent</BGCOLOR>
+                        <BUMP>yes</BUMP>
+                        <LABEL>no</LABEL>
+                    </PLIMSOLL>
+                </GLYPH>
+            </TYPE>
+        </CATEGORY>
+    </STYLESHEET>
+</DASSTYLE>
+
+
+        <!--VCFParser.prototype.getStyleSheet = function(callback) {-->
+        <!--var stylesheet = new DASStylesheet();-->
+
+        <!--{-->
+        <!--var varStyle = new DASStyle();-->
+        <!--varStyle.glyph = '__INSERTION';-->
+        <!--varStyle.BUMP = 'yes';-->
+        <!--varStyle.LABEL = 'no';-->
+        <!--varStyle.FGCOLOR = 'rgb(50,80,255)';-->
+        <!--varStyle.BGCOLOR = '#888888';-->
+        <!--varStyle.STROKECOLOR = 'black';-->
+        <!--stylesheet.pushStyle({type: 'insertion'}, null, varStyle);-->
+        <!--}-->
+        <!--{-->
+        <!--var varStyle = new DASStyle();-->
+        <!--varStyle.glyph = 'PLIMSOLL';-->
+        <!--varStyle.BUMP = 'yes';-->
+        <!--varStyle.LABEL = 'no';-->
+        <!--varStyle.FGCOLOR = 'rgb(255, 60, 60)';-->
+        <!--varStyle.BGCOLOR = '#888888';-->
+        <!--varStyle.STROKECOLOR = 'black';-->
+        <!--stylesheet.pushStyle({type: 'deletion'}, null, varStyle);-->
+        <!--}-->
+        <!--{-->
+        <!--var varStyle = new DASStyle();-->
+        <!--varStyle.glyph = 'PLIMSOLL';-->
+        <!--varStyle.BUMP = 'yes';-->
+        <!--varStyle.LABEL = 'no';-->
+        <!--varStyle.FGCOLOR = 'rgb(50,80,255)';-->
+        <!--varStyle.BGCOLOR = '#888888';-->
+        <!--varStyle.STROKECOLOR = 'black';-->
+        <!--stylesheet.pushStyle({type: 'default'}, null, varStyle);-->
+        <!--}-->
+
+        <!--return callback(stylesheet);-->
+        <!--}-->
