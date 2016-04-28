@@ -21,6 +21,7 @@
   ],
   "dependencies": {
     "normalize-css": "^4.1.0",
-    "elegant-icons": "*"
+    "elegant-icons": "*",
+    "jquery": "^2.2.3"
   }
 }

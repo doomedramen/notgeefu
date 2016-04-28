@@ -25,7 +25,7 @@
         <span>NGF</span>
     </div>
 
-    <div class="search">
+    <div class="search" id="nav-search">
         <div class="icon">
             <span data-icon="&#x55;"></span>
         </div>
@@ -33,7 +33,7 @@
     </div>
 
     <div class="pull-right">
-        <div class="user">
+        <div class="user" data-toggle-hover="#user-menu">
             <div class="image">
                 <img src="https://s.gravatar.com/avatar/6e7c5501261e6e5b806a14336da15e78?s=80&r=g">
             </div>
@@ -41,19 +41,35 @@
                 <span>Martin Page</span>
             </div>
 
+            <div id="user-menu" class="hidden">
+                <ul>
+                    <li><a href="/signout">Sign out</a></li>
+                </ul>
+            </div>
+
         </div>
 
-        <div class="new">
-            <a href="#">
-                <span data-icon="&#x4c;"></span>
-            </a>
+        <div class="new" data-toggle-click="#new-list">
+            <!--<a href="#">-->
+            <span data-icon="&#x4c;"></span>
+            <!--</a>-->
         </div>
 
 
     </div>
 
-
 </nav>
+
+
+<div id="new-list" class="hidden">
+
+    <span>Add new:</span>
+    <ul>
+        <li><a href="#" class="button">Organism</a></li>
+        <li><a href="#" class="button">Genome</a></li>
+        <li><a href="#" class="button">Experiment</a></li>
+    </ul>
+</div>
 
 <div class="left-nav">
     <ul>
@@ -111,7 +127,7 @@
     </ul>
 </div>
 
-<div class="search-results">
+<div class="search-results hidden">
     <ul>
         <li>
             <span>results 1</span>
