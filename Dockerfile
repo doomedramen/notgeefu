@@ -11,7 +11,7 @@ RUN npm install
 # Install front end dependencies
 RUN npm install -g bower
 COPY bower.json /usr/src/app
-RUN bower install
+RUN bower install --allow-root
 
 # Bundle app source
 COPY . /usr/src/app
