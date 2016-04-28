@@ -8,10 +8,13 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 RUN npm install
 
+# Install front end dependencies
+RUN npm install -g bower
+COPY bower.json /usr/src/app
+RUN bower install
 
 # Bundle app source
 COPY . /usr/src/app
-RUN bower install
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
