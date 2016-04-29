@@ -2,4 +2,4 @@ dependencies:
   pre:
     - bower install
   post:
-    - npm cover
+    - npm run cover
