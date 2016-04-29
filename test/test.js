@@ -1,8 +1,17 @@
-var assert = require('chai').assert;
-describe('test', function () {
-  describe('test', function () {
-    it('should return be good', function () {
-      assert.equal(1, 1);
-    });
+//var assert = require("chai").assert;
+
+var request = require("supertest");
+describe("loading express", function () {
+  var app;
+  beforeEach(function () {
+    app = require("../app");
+  });
+  afterEach(function () {
+    app.close();
+  });
+  it("responds to /", function testSlash(done) {
+    request(app)
+      .get("/")
+      .expect(200, done);
   });
 });

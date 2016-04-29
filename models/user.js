@@ -1,8 +1,8 @@
-const thinky = require('../lib/thinky.js');
+const thinky = require("../lib/thinky.js");
 const r = thinky.r;
 const type = thinky.type;
-const gravatar = require('gravatar');
-//const uuid = require('uuid');
+const gravatar = require("gravatar");
+//const uuid = require("uuid");
 
 const User = thinky.createModel("User", {
   id: type.string(),
@@ -19,11 +19,11 @@ const User = thinky.createModel("User", {
   //accountLevel: type.number().default(0)
 });
 
-User.pre('save', ()=> {
+User.pre("save", ()=> {
   const user = this;
   user.gravitar = this.getGravatar();
 });
 
-User.define('getGravatar', ()=> {
-  return gravatar.url(this.email, {s: '200', r: 'pg', d: '404'});
+User.define("getGravatar", ()=> {
+  return gravatar.url(this.email, {s: "200", r: "pg", d: "404"});
 });
