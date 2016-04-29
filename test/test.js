@@ -2,13 +2,7 @@
 
 var request = require("supertest");
 describe("loading express", function () {
-  var app;
-  beforeEach(function () {
-    app = require("../app");
-  });
-  afterEach(function () {
-    app.close();
-  });
+  var app = require("../app");
   it("responds to /", function testSlash(done) {
     request(app)
       .get("/")
