@@ -1,4 +1,5 @@
 //var assert = require("chai").assert;
+/*globals describe, it*/
 
 var request = require("supertest");
 describe("loading express", function () {
