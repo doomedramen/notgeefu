@@ -19,11 +19,11 @@ const User = thinky.createModel("User", {
   //accountLevel: type.number().default(0)
 });
 
-User.pre("save", ()=> {
+User.pre("save", () => {
   const user = this;
   user.gravitar = this.getGravatar();
 });
 
-User.define("getGravatar", ()=> {
+User.define("getGravatar", () => {
   return gravatar.url(this.email, {s: "200", r: "pg", d: "404"});
 });
