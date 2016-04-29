@@ -1,3 +1,4 @@
+/*globals $*/
 $(function () {
 
   var navSearch = $("#nav-search");

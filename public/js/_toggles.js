@@ -1,3 +1,5 @@
+/*globals $*/
+
 $(function () {
   $("[data-toggle-hover]").on("mouseenter mouseleave", function () {
     var selector = $(this).attr("data-toggle-hover");
