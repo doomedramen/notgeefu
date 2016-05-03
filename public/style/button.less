@@ -31,6 +31,24 @@ input[type="button"] {
     outline: 0;
   }
 
+  &.primary {
+    color: #fff;
+    background-color: @primary;
+    border-color: @primary;
+    &:hover, &:focus {
+      color: #fff;
+      background-color: @primary-dark;
+      border-color: @primary-dark;
+    }
+    &.hollow {
+      color: @success;
+      &:hover, &:focus {
+        background-color: @success;
+        border-color: @success;
+      }
+    }
+  }
+
   &.success {
     color: #fff;
     background-color: @success;
